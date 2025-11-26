@@ -295,7 +295,23 @@ class TorchRGE256(nn.Module):
     
     def set_state(self, state: dict) -> 'TorchRGE256':
         return self.load_state_dict(state)
-    
+
+    @classmethod
+    def from_state(cls, state: dict) -> 'TorchRGE256':
+        """
+        Create a new TorchRGE256 instance from a saved state dictionary.
+
+        Args:
+            state: State dictionary from get_state() or state_dict()
+
+        Returns:
+            New TorchRGE256 instance with restored state
+        """
+        # Create instance with dummy seed (will be overwritten)
+        instance = cls(seed=0)
+        instance.load_state_dict(state)
+        return instance
+
     def __repr__(self) -> str:
         return f"TorchRGE256(seed={self._seed}, rounds={self._rounds}, domain='{self._domain}', device='{self._device}')"
     

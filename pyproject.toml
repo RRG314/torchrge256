@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "torchrge256"
+version = "0.1.0"
+description = "PyTorch-native implementation of the RGE-256 pseudorandom number generator"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "Steven Reid"}]
+dependencies = ["torch>=1.10"]
+
+[project.urls]
+Homepage = "https://github.com/RRG314/torchrge256"
+Source = "https://github.com/RRG314/torchrge256"
+Zenodo = "https://zenodo.org/records/17713219"

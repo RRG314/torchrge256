@@ -4,7 +4,7 @@
 **Author:** Steven Reid
 **ORCID:** 0009-0003-9132-3410
 **Repository:** [https://github.com/RRG314/torchrge256](https://github.com/RRG314/torchrge256)
-**Zenodo Preprint (RGE-256 Core Algorithm):** [https://zenodo.org/records/17713219](https://zenodo.org/records/17713219)
+**Zenodo Preprint:** (RGE-256: A New ARX-Based Pseudorandom Number Generator With Structured Entropy and Empirical Validation):** [https://zenodo.org/records/17713219](https://zenodo.org/records/17713219)
 
 TorchRGE256 is a deterministic 256-bit pseudorandom number generator implemented as a PyTorch-compatible module. It provides stable and reproducible randomness for both CPU and CUDA devices and includes full support for distribution sampling, state checkpointing, domain separation, and independent substreams. TorchRGE256 operates independently from PyTorch's global RNG, enabling reproducible and isolated randomness streams for machine learning workflows.
 
@@ -30,7 +30,7 @@ git clone https://github.com/RRG314/torchrge256
 cd torchrge256
 ```
 
-If distributed on PyPI, installation would be:
+ PyPI installation:
 
 ```
 pip install torchrge256
@@ -186,7 +186,7 @@ ORCID: 0009-0003-9132-3410
 
 ## License
 
-TorchRGE256 is released under the Apache License 2.0.
+TorchRGE256 is released under the MIT license.
 
 ## Contributing
 
@@ -194,6 +194,3 @@ Feature requests, bug reports, and collaboration inquiries are welcome through t
 
 [https://github.com/RRG314/torchrge256](https://github.com/RRG314/torchrge256)
 
-
-
-Just tell me what you want next.

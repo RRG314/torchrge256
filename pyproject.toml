@@ -1,18 +1,36 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "torchrge256"
-version = "0.1.0"
+version = "0.1.1"
 description = "PyTorch-native implementation of the RGE-256 pseudorandom number generator"
 readme = "README.md"
 requires-python = ">=3.8"
-license = {text = "MIT"}
-authors = [{name = "Steven Reid"}]
+license = "MIT"
+authors = [
+    {name = "Steven Reid", email = "steven.reid@example.com"}
+]
+keywords = ["pytorch", "prng", "random", "rge", "arx", "machine-learning", "deep-learning"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 dependencies = ["torch>=1.10"]
 
 [project.urls]
 Homepage = "https://github.com/RRG314/torchrge256"
-Source = "https://github.com/RRG314/torchrge256"
+Repository = "https://github.com/RRG314/torchrge256"
+Documentation = "https://github.com/RRG314/torchrge256#readme"
+"Bug Tracker" = "https://github.com/RRG314/torchrge256/issues"
 Zenodo = "https://zenodo.org/records/17713219"

@@ -11,6 +11,7 @@ ORCID: 0009-0003-9132-3410
 """
 
 from .torchrge256 import TorchRGE256
+from .torchrge256ctr import RGE256ctr_Torch, TorchRGE256ctr
 
 __version__ = "0.1.1"
-__all__ = ["TorchRGE256"]
+__all__ = ["TorchRGE256", "RGE256ctr_Torch", "TorchRGE256ctr"]

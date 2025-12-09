@@ -19,11 +19,11 @@ torchrge256/
 
 ## Version Management
 
-Current version: **0.1.1**
+Current version: **1.1.0**
 
 Update version in two places before publishing:
-1. `pyproject.toml` - line 7: `version = "0.1.1"`
-2. `torchrge256/__init__.py` - line 15: `__version__ = "0.1.1"`
+1. `pyproject.toml` - line 7: `version = "1.1.0"`
+2. `torchrge256/__init__.py` - line 16: `__version__ = "1.1.0"`
 
 ---
 
@@ -59,8 +59,8 @@ Update version in two places before publishing:
 
 **Option A: Create a test tag**
 ```bash
-git tag v0.1.1-test1
-git push origin v0.1.1-test1
+git tag v1.1.0-test1
+git push origin v1.1.0-test1
 ```
 
 **Option B: Manual trigger**
@@ -72,8 +72,8 @@ git push origin v0.1.1-test1
 
 **Create a GitHub Release:**
 1. Go to your repo → Releases → "Draft a new release"
-2. Create a new tag: `v0.1.1`
-3. Title: `v0.1.1` or `Release 0.1.1`
+2. Create a new tag: `v1.1.0`
+3. Title: `v1.1.0` or `Release 1.1.0`
 4. Description: Write release notes
 5. Click "Publish release"
 
@@ -100,8 +100,8 @@ python -m build
 ```
 
 This creates:
-- `dist/torchrge256-0.1.1.tar.gz` (source distribution)
-- `dist/torchrge256-0.1.1-py3-none-any.whl` (wheel)
+- `dist/torchrge256-1.1.0.tar.gz` (source distribution)
+- `dist/torchrge256-1.1.0-py3-none-any.whl` (wheel)
 
 ### Validate the Package
 
@@ -110,7 +110,7 @@ This creates:
 twine check dist/*
 
 # Test install locally
-pip install dist/torchrge256-0.1.1-py3-none-any.whl
+pip install dist/torchrge256-1.1.0-py3-none-any.whl
 ```
 
 ### Publish to Test PyPI

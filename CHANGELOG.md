@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2025-12-09
+
+### Added
+- Counter-mode implementation of RGE-256 (`TorchRGE256ctr`, `RGE256ctr_Torch`)
+  - Simpler ARX structure with 64-bit counter
+  - Optimized for batch generation (8 x 32-bit values per block)
+  - Full API compatibility with standard `TorchRGE256`
+  - Complete state management (save/restore/fork)
+- Comprehensive test suite for counter-mode (`TEST_CTR_MODE.py`)
+- Release notes document (`RELEASE_NOTES_v1.1.0.md`)
+
+### Changed
+- Bumped version to 1.1.0 in `pyproject.toml` and `__init__.py`
+
 ## [0.1.1] - 2025-11-26
 
 ### Added
@@ -51,5 +65,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MIT License
 - Comprehensive test suite in Jupyter notebook
 
+[1.1.0]: https://github.com/RRG314/torchrge256/compare/v0.1.1...v1.1.0
 [0.1.1]: https://github.com/RRG314/torchrge256/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/RRG314/torchrge256/releases/tag/v0.1.0

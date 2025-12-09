@@ -1,4 +1,4 @@
-# Release Notes: v0.1.2 - Counter-Mode Support
+# Release Notes: v1.1.0 - Counter-Mode Support
 
 ## What's New
 
@@ -49,7 +49,7 @@ Methods:
 - `torchrge256/torchrge256ctr.py` - New counter-mode implementation
 - `torchrge256/__init__.py` - Export new classes
 - `TEST_CTR_MODE.py` - Comprehensive test suite
-- `pyproject.toml` - Version bump to 0.1.2
+- `pyproject.toml` - Version bump to 1.1.0
 - `CHANGELOG.md` - Updated (if exists)
 
 ## Package Validation
@@ -61,8 +61,8 @@ Methods:
 
 ## Build Artifacts
 
-- `dist/torchrge256-0.1.2-py3-none-any.whl` (9.5 KB)
-- `dist/torchrge256-0.1.2.tar.gz` (9.2 KB)
+- `dist/torchrge256-1.1.0-py3-none-any.whl` (9.5 KB)
+- `dist/torchrge256-1.1.0.tar.gz` (9.2 KB)
 
 ## Release Process
 
@@ -71,15 +71,15 @@ The package is ready for automated PyPI publishing:
 1. **Merge this branch to main** (or merge directly)
 2. **Create GitHub Release**:
    - Go to: https://github.com/RRG314/torchrge256/releases/new
-   - Tag: `v0.1.2`
-   - Title: `Release 0.1.2 - Counter-Mode Support`
+   - Tag: `v1.1.0`
+   - Title: `Release 1.1.0 - Counter-Mode Support`
    - Description: Add these release notes
    - Publish release
 
 3. **Automated Publishing**: GitHub Actions will automatically:
    - Build the package
    - Publish to PyPI
-   - Make it available via `pip install torchrge256==0.1.2`
+   - Make it available via `pip install torchrge256==1.1.0`
 
 ## Backwards Compatibility
 

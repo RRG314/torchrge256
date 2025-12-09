@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "torchrge256"
-version = "0.1.2"
+version = "1.1.0"
 description = "PyTorch-native implementation of the RGE-256 pseudorandom number generator"
 readme = "README.md"
 requires-python = ">=3.8"
